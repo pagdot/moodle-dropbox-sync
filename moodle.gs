@@ -61,9 +61,9 @@ function extractFileUrls(content, token) {
           for (var l = 0; l < content[i][j].modules[k].contents.length; l++) {
             if (content[i][j].modules[k].contents[l].type == "file") {
               var fileUrl = new Object();
-              fileUrl.course = content[i].name;
-              fileUrl.module = content[i][j].modules[k].name;
-              fileUrl.fileName = content[i][j].modules[k].contents[l].filename;
+              fileUrl.course = content[i].name.trim();
+              fileUrl.module = content[i][j].modules[k].name.trim();
+              fileUrl.fileName = content[i][j].modules[k].contents[l].filename.trim();
               fileUrl.url = content[i][j].modules[k].contents[l].fileurl;
               fileUrl.time = new Date(content[i][j].modules[k].contents[l].timemodified * 1000);
               fileUrls.push(fileUrl);

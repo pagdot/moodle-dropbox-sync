@@ -54,7 +54,7 @@ function uploadFile(fPath, payload, date, token) {
     "Dropbox-API-Arg" : JSON.stringify({
       "path": fPath,
       "mode": {".tag" : "overwrite"},
-      "client_modified": date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate() + "T" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "Z",
+      "client_modified": date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + "T" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "Z",
       "mute" : true
     })
   }
