@@ -5,6 +5,8 @@ Google Apps Script to copy files from moodle courses to a Dropbox folder
  * Create a new Google Apps Script project https://script.google.com/intro
  * Create files in project
  * copy source files into project
+ * configure global vars (see *Configuration*)
+ * Run Project and/or set triggers (Edit/Current Project's Triggers)
 
 ## Configuration
 change the global variables:
@@ -17,7 +19,7 @@ change the global variables:
 ## Tokens
 
 ### Dropbox
- 1. Open https://dropbox.github.io/dropbox-api-v2-explorer/#files_copy  _
+ 1. Open https://dropbox.github.io/dropbox-api-v2-explorer/#files_copy
  2. Click on *Get Token*
  3. Copy generated Token
  
